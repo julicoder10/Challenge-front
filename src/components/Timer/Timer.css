@@ -1,0 +1,27 @@
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 200px;
+}
+
+.timer .buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.timer .buttons button{
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    border: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.timer .buttons button:first-child{
+    background: none;
+    color: #fff;
+}

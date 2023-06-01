@@ -1,0 +1,36 @@
+.board-container{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 450px;
+    height: 450px;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    .board {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+.referencia-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.referencia-div img{
+    width: 20rem;
+}
