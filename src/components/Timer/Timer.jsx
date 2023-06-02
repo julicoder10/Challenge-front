@@ -20,6 +20,9 @@ export const Timer = () => {
     };
   }, [isRunning]);
 
+  // REVIEW handle start and handle stop could be 1 function that negates the previous value of isRunning
+  // this way we use half the code not only here but when rendering the buttons, since we only need to change 
+  // the label based on isRunning and not render an entire new component.
   const handleStart = () => {
     setIsRunning(true);
   };

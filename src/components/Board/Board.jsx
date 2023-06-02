@@ -14,6 +14,7 @@ export const Board = () => {
 
     if (isAdjacent(pieceIndex, emptyIndex)) {
       const newBoard = [...board]; // Copia del tablero actual
+      // REVIEW explain how this assignment works
       [newBoard[pieceIndex], newBoard[emptyIndex]] = [newBoard[emptyIndex], newBoard[pieceIndex]]; // Intercambio de posiciones
       setBoard(newBoard); // Actualización del tablero
       setMoves(moves + 1); // Incremento del contador de movimientos
